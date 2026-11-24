@@ -1,0 +1,1252 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Holiday AngJet Resort | Luxury Tropical Getaway</title>
+    <meta name="description"
+        content="Welcome to Holiday AngJet Resort. Experience premier luxury, scenic private villas, crystal clear pools, and bespoke tropical escapes.">
+    <meta name="theme-color" content="#ffffff">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="preload" as="image" href="./asset/images/hero-resort-section.avif" fetchpriority="high"
+        type="image/avif">
+
+    <link rel="stylesheet" href="./asset/css/style.css">
+</head>
+
+<body>
+
+    <header class="site-header" id="header">
+        <div class="container header-container">
+
+            <a href="#home" class="brand brand-name">Holiday AngJet Resort</a>
+
+            <nav class="site-nav" id="siteNav" aria-label="Primary Navigation">
+                <ul class="nav-list">
+                    <li><a href="#offers" class="nav-link">OFFERS</a></li>
+                    <li><a href="#facilities" class="nav-link">FACILITIES</a></li>
+                    <li><a href="#events" class="nav-link">EVENTS</a></li>
+                    <li><a href="#accommodation" class="nav-link">ACCOMMODATION</a></li>
+                    <li><a href="#gallery" class="nav-link">GALLERY</a></li>
+                    <li><a href="#explore-us" class="nav-link">ABOUT US</a></li>
+                    <li><a href="#contact-us" class="nav-link">INVESTOR</a></li>
+                    <li><a href="#contact-us" class="nav-link">CONTACT US</a></li>
+                </ul>
+            </nav>
+
+            <div class="header-actions">
+                <button type="button" class="btn-book-header js-open-booking">
+                    BOOK NOW
+                </button>
+
+                <button type="button" class="mobile-nav-toggle" aria-controls="siteNav" aria-expanded="false"
+                    aria-label="Toggle navigation menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main id="main-content">
+        <section class="hero-section" id="home" aria-label="Hero Introduction">
+
+            <div class="hero-media-wrapper">
+                <img src="./asset/images/hero-resort-section.avif"
+                    alt="Holiday AngJet Resort tropical swimming pool surrounded by luxury wooden villas and palm trees"
+                    class="hero-bg-img" fetchpriority="high" width="1171" height="781">
+            </div>
+
+            <div class="hero-overlay" aria-hidden="true"></div>
+
+            <div class="hero-content">
+                <h1 class="hero-title">Welcome to Holiday AngJet Resort</h1>
+                <p class="hero-subtitle">Turning Challenges into Triumphs: Explore Our Success Stories</p>
+                <div class="hero-cta-group">
+                    <button type="button" class="btn btn-hero-cta js-open-booking">
+                        Book Now
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <a href="#contact-us" class="floating-contact-btn" aria-label="Contact resort concierge or quick inquiries"
+            title="Contact Us">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path
+                    d="M6.62 10.79a15.053 15.053 0 006.59 6.59l2.2-2.2a1 1 0 011.01-.24c1.12.37 2.33.57 3.58.57a1 1 0 011 1V20a1 1 0 01-1 1C10.74 21 3 13.26 3 4a1 1 0 011-1h3.5a1 1 0 011 1c0 1.25.2 2.46.57 3.58a1 1 0 01-.24 1.01l-2.21 2.2z" />
+            </svg>
+            <span class="tooltip">Call / Quick Inquiries</span>
+        </a>
+
+        <div class="booking-search-bar" id="quickSearch">
+            <div class="container">
+                <form class="search-bar-form js-search-form">
+                    <div class="search-item">
+                        <label for="searchCheckin" class="search-label">Check-In</label>
+                        <input type="date" id="searchCheckin" class="search-input" required>
+                    </div>
+                    <div class="search-divider"></div>
+                    <div class="search-item">
+                        <label for="searchCheckout" class="search-label">Check-Out</label>
+                        <input type="date" id="searchCheckout" class="search-input" required>
+                    </div>
+                    <div class="search-divider"></div>
+                    <div class="search-item">
+                        <label for="searchGuests" class="search-label">Guests</label>
+                        <select id="searchGuests" class="search-select">
+                            <option value="1 Adult">1 Adult</option>
+                            <option value="2 Adults" selected>2 Adults</option>
+                            <option value="2 Adults, 1 Child">2 Adults, 1 Child</option>
+                            <option value="Family / 4+ Guests">Family (4+ Guests)</option>
+                        </select>
+                    </div>
+                    <div class="search-divider"></div>
+                    <div class="search-item">
+                        <label for="searchRoom" class="search-label">Villa Type</label>
+                        <select id="searchRoom" class="search-select">
+                            <option value="Overwater Lagoon Villa">Overwater Lagoon Villa</option>
+                            <option value="Oceanfront Sunset Pavilion">Oceanfront Sunset Pavilion</option>
+                            <option value="Canopy Eco Bungalow">Canopy Eco Bungalow</option>
+                            <option value="AngJet Presidential Sanctuary">AngJet Presidential Sanctuary</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="btn btn-search-submit">
+                        <span>Check Rates</span>
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                    </button>
+                </form>
+            </div>
+        </div>
+
+        <section id="offers" class="section-offers-mosaic">
+
+            <div class="offers-branch-bg" aria-hidden="true">
+                <svg viewBox="0 0 1200 650" fill="none" xmlns="http://www.w3.org/2000/svg">
+
+                    <path d="M0 580C140 540 280 480 380 420" stroke="#CBD5E1" stroke-width="2.5" stroke-linecap="round" opacity="0.6"/>
+
+                    <path d="M520 280C560 210 650 160 760 110C870 60 1020 35 1200 20" stroke="#CBD5E1" stroke-width="3" stroke-linecap="round" opacity="0.6"/>
+                    <path d="M720 125C765 95 825 80 875 85" stroke="#CBD5E1" stroke-width="2" stroke-linecap="round" opacity="0.5"/>
+                    <path d="M830 80C865 55 920 45 965 50" stroke="#CBD5E1" stroke-width="1.8" stroke-linecap="round" opacity="0.5"/>
+                    <path d="M640 165C680 145 725 140 760 145" stroke="#CBD5E1" stroke-width="1.8" stroke-linecap="round" opacity="0.45"/>
+                    <path d="M570 230C610 205 660 195 700 200" stroke="#CBD5E1" stroke-width="1.8" stroke-linecap="round" opacity="0.45"/>
+
+                    <ellipse cx="878" cy="84" rx="7" ry="3.5" transform="rotate(-15 878 84)" fill="#94A3B8" opacity="0.5"/>
+                    <ellipse cx="968" cy="49" rx="7" ry="3.5" transform="rotate(-20 968 49)" fill="#94A3B8" opacity="0.5"/>
+                    <ellipse cx="762" cy="144" rx="6" ry="3" transform="rotate(-18 762 144)" fill="#94A3B8" opacity="0.45"/>
+                    <ellipse cx="702" cy="199" rx="6" ry="3" transform="rotate(-25 702 199)" fill="#94A3B8" opacity="0.45"/>
+                </svg>
+            </div>
+
+            <div class="container offers-mosaic-container">
+
+                <div class="mosaic-gallery">
+
+                    <div class="mosaic-item mosaic-item-1">
+                        <img 
+                            src="./asset/images/offersection1.avif" 
+                            alt="Holiday AngJet Resort poolside loungers and umbrella" 
+                            loading="lazy" 
+                            width="500" 
+                            height="333"
+                        >
+                    </div>
+
+                    <div class="mosaic-item mosaic-item-2">
+                        <img 
+                            src="./asset/images/offersection2.avif" 
+                            alt="Illuminated twilight wooden pier over turquoise lagoon" 
+                            loading="lazy" 
+                            width="500" 
+                            height="333"
+                        >
+                    </div>
+
+                    <div class="mosaic-item mosaic-item-3">
+                        <img 
+                            src="./asset/images/offersection3.avif" 
+                            alt="Wooden boardwalk leading to luxury overwater bungalow" 
+                            loading="lazy" 
+                            width="500" 
+                            height="333"
+                        >
+                    </div>
+
+                    <div class="mosaic-item mosaic-item-4">
+                        <img 
+                            src="./asset/images/offersection4.avif" 
+                            alt="Resort terrace swimming pool overlooking ocean" 
+                            loading="lazy" 
+                            width="500" 
+                            height="333"
+                        >
+                    </div>
+                </div>
+
+                <div class="offers-mosaic-content">
+                    <h2 class="offers-mosaic-title">Upgrade your<br>Experience with us</h2>
+                    <p class="offers-mosaic-desc">
+                        Immerse yourself in elevated tropical luxury with our bespoke retreat packages. From private overwater dining and holistic Ayurvedic spa rituals to chartered seaplane excursions, unlock unforgettable privileges designed to rejuvenate your senses.
+                    </p>
+                    <button type="button" class="btn btn-mosaic-cta js-open-booking">
+                        <span>Book Now</span>
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                            <path d="M5 12h14M12 5l7 7-7 7"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <section id="facilities" class="section-facilities-row">
+
+            <div class="facilities-branch-bg" aria-hidden="true">
+                <svg viewBox="0 0 900 350" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M-60 120 C60 100 160 130 250 85 C320 50 410 40 500 15" stroke="#CBD5E1" stroke-width="2.5" stroke-linecap="round" opacity="0.45"/>
+                    <path d="M120 105 C165 75 220 70 265 80" stroke="#CBD5E1" stroke-width="1.8" stroke-linecap="round" opacity="0.35"/>
+                    <path d="M300 65 C345 40 400 35 440 45" stroke="#CBD5E1" stroke-width="1.8" stroke-linecap="round" opacity="0.35"/>
+                    <ellipse cx="268" cy="80" rx="7" ry="3.5" transform="rotate(-15 268 80)" fill="#94A3B8" opacity="0.4"/>
+                    <ellipse cx="442" cy="45" rx="7" ry="3.5" transform="rotate(-20 442 45)" fill="#94A3B8" opacity="0.4"/>
+                </svg>
+            </div>
+
+            <div class="container facilities-container">
+
+                <div class="facilities-split-header">
+                    <div class="facilities-header-left">
+                        <h2 class="facilities-title">Our Facilities</h2>
+                    </div>
+                    <div class="facilities-header-right">
+                        <p class="facilities-desc">
+                            Indulge in an extraordinary range of world-class resort amenities and leisurely pursuits. From tranquil lagoon kayaking to Michelin-inspired starlit dining and private wellness sanctuaries, each facility is curated for your ultimate relaxation.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="facilities-cards-grid">
+
+                    <article class="facility-portrait-card">
+                        <div class="facility-img-wrap">
+                            <img 
+                                src="./asset/images/facility-boating.avif" 
+                                alt="Kayaking and boating in crystal clear turquoise resort waters" 
+                                loading="lazy" 
+                                width="600" 
+                                height="900"
+                            >
+                        </div>
+                        <div class="facility-card-overlay"></div>
+                        <div class="facility-card-content">
+                            <h3 class="facility-card-title">Boating</h3>
+                            <p class="facility-card-text">Experience serene waters with our guided kayaking, paddleboarding & chartered boat tours.</p>
+                            <button type="button" class="btn-facility-pill js-open-booking" data-room="Boating Experience">
+                                <span>Book now</span>
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                    <path d="M5 12h14M12 5l7 7-7 7"/>
+                                </svg>
+                            </button>
+                        </div>
+                    </article>
+
+                    <article class="facility-portrait-card">
+                        <div class="facility-img-wrap">
+                            <img 
+                                src="./asset/images/facility-dining.avif" 
+                                alt="Scenic waterfront dining deck with ambient lantern lighting" 
+                                loading="lazy" 
+                                width="600" 
+                                height="900"
+                            >
+                        </div>
+                        <div class="facility-card-overlay"></div>
+                        <div class="facility-card-content">
+                            <h3 class="facility-card-title">Dining</h3>
+                            <p class="facility-card-text">Savor exquisite gourmet seafood and handcrafted tropical culinary delights under starlight.</p>
+                            <button type="button" class="btn-facility-pill js-open-booking" data-room="Gourmet Dining Reservation">
+                                <span>Book now</span>
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                    <path d="M5 12h14M12 5l7 7-7 7"/>
+                                </svg>
+                            </button>
+                        </div>
+                    </article>
+
+                    <article class="facility-portrait-card">
+                        <div class="facility-img-wrap">
+                            <img 
+                                src="./asset/images/facility-pool.avif" 
+                                alt="Private freshwater pool surrounded by lush tropical gardens" 
+                                loading="lazy" 
+                                width="600" 
+                                height="900"
+                            >
+                        </div>
+                        <div class="facility-card-overlay"></div>
+                        <div class="facility-card-content">
+                            <h3 class="facility-card-title">Private Pool</h3>
+                            <p class="facility-card-text">Unwind in secluded freshwater plunge pools nestled within tranquil tropical palm sanctuaries.</p>
+                            <button type="button" class="btn-facility-pill js-open-booking" data-room="Private Pool Cabana">
+                                <span>Book now</span>
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                    <path d="M5 12h14M12 5l7 7-7 7"/>
+                                </svg>
+                            </button>
+                        </div>
+                    </article>
+
+                    <article class="facility-portrait-card">
+                        <div class="facility-img-wrap">
+                            <img src="./asset/images/facility-eco-cycling.avif"
+                                alt="Two cyclists riding along a palm-lined coastal trail"
+                                loading="lazy" width="600" height="900">
+                        </div>
+                        <div class="facility-card-overlay"></div>
+                        <div class="facility-card-content">
+                            <h3 class="facility-card-title">Eco Cycling</h3>
+                            <p class="facility-card-text">Explore coastal eco trails, scenic mountain biking tracks, and untouched island flora.</p>
+                            <button type="button" class="btn-facility-pill js-open-booking" data-room="Eco Trail Cycling">
+                                <span>Book now</span>
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                    <path d="M5 12h14M12 5l7 7-7 7"/>
+                                </svg>
+                            </button>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="facilities-bottom-action">
+                    <button type="button" class="btn btn-explore-facilities js-open-booking">
+                        <span>Explore</span>
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                            <path d="M5 12h14M12 5l7 7-7 7"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <section id="events" class="section-events-stagger">
+
+            <div class="events-branch-bg" aria-hidden="true">
+                <svg viewBox="0 0 1200 650" fill="none" xmlns="http://www.w3.org/2000/svg">
+
+                    <path d="M0 60C120 75 220 120 300 180" stroke="#CBD5E1" stroke-width="2.5" stroke-linecap="round" opacity="0.45"/>
+                    <path d="M120 75C160 55 210 50 250 55" stroke="#CBD5E1" stroke-width="1.8" stroke-linecap="round" opacity="0.35"/>
+
+                    <path d="M680 380C760 410 880 470 1020 540C1100 580 1150 610 1200 630" stroke="#CBD5E1" stroke-width="3" stroke-linecap="round" opacity="0.55"/>
+                    <path d="M840 450C890 430 950 425 995 435" stroke="#CBD5E1" stroke-width="2" stroke-linecap="round" opacity="0.45"/>
+                    <path d="M960 510C1005 490 1060 485 1105 495" stroke="#CBD5E1" stroke-width="1.8" stroke-linecap="round" opacity="0.45"/>
+                    <ellipse cx="998" cy="434" rx="7" ry="3.5" transform="rotate(-15 998 434)" fill="#94A3B8" opacity="0.45"/>
+                    <ellipse cx="1108" cy="494" rx="7" ry="3.5" transform="rotate(-20 1108 494)" fill="#94A3B8" opacity="0.45"/>
+                </svg>
+            </div>
+
+            <div class="container events-stagger-container">
+
+                <div class="events-stagger-gallery">
+
+                    <div class="events-stagger-item events-item-1">
+                        <img 
+                            src="./asset/images/events1.avif" 
+                            alt="Luxury resort yacht cruising through coastal cliffs" 
+                            loading="lazy" 
+                            width="500" 
+                            height="750"
+                        >
+                    </div>
+
+                    <div class="events-stagger-item events-item-2">
+                        <img 
+                            src="./asset/images/events2.avif" 
+                            alt="Paddleboarding over vibrant turquoise coral lagoon" 
+                            loading="lazy" 
+                            width="500" 
+                            height="750"
+                        >
+                    </div>
+
+                    <div class="events-stagger-item events-item-3">
+                        <img 
+                            src="./asset/images/events3.avif" 
+                            alt="Relaxation under tropical beach shade tree" 
+                            loading="lazy" 
+                            width="500" 
+                            height="749"
+                        >
+                    </div>
+
+                    <div class="events-stagger-item events-item-4">
+                        <img 
+                            src="./asset/images/events4.avif" 
+                            alt="Resort adventure playground with slide in lush nature" 
+                            loading="lazy" 
+                            width="500" 
+                            height="667"
+                        >
+                    </div>
+                </div>
+
+                <div class="events-stagger-content">
+                    <h2 class="events-stagger-title">Enjoy your<br>entertaining<br>places</h2>
+                    <button type="button" class="btn btn-events-cta js-open-booking">
+                        <span>Explore</span>
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                            <path d="M5 12h14M12 5l7 7-7 7"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <section id="accommodation" class="section-cottages">
+
+            <div class="cottages-branch-bg" aria-hidden="true">
+                <svg viewBox="0 0 900 450" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M550 250C600 190 700 140 800 90C900 45 1050 25 1200 15" stroke="#CBD5E1" stroke-width="2.5" stroke-linecap="round" opacity="0.45"/>
+                    <path d="M740 110C780 85 840 70 885 75" stroke="#CBD5E1" stroke-width="1.8" stroke-linecap="round" opacity="0.35"/>
+                    <path d="M840 70C875 50 925 40 965 45" stroke="#CBD5E1" stroke-width="1.8" stroke-linecap="round" opacity="0.35"/>
+                    <ellipse cx="888" cy="74" rx="6" ry="3" transform="rotate(-15 888 74)" fill="#94A3B8" opacity="0.4"/>
+                    <ellipse cx="968" cy="44" rx="6" ry="3" transform="rotate(-20 968 44)" fill="#94A3B8" opacity="0.4"/>
+                </svg>
+            </div>
+
+            <div class="container cottages-container">
+
+                <div class="cottages-header">
+                    <h2 class="cottages-title">Discover Our Cottages</h2>
+                    <p class="cottages-desc">
+                        Immerse yourself in nature with our thoughtfully crafted private sanctuary cottages, offering uncompromised comfort, scenic lagoon views, and bespoke concierge hospitality.
+                    </p>
+                </div>
+
+                <div class="cottages-tabs-wrapper">
+                    <div class="cottages-tabs" role="tablist" aria-label="Cottage Categories">
+                        <button type="button" class="cottage-tab active" data-category="all">Residential Concept</button>
+                        <button type="button" class="cottage-tab" data-category="single">Single Room</button>
+                        <button type="button" class="cottage-tab" data-category="large">Large Room</button>
+                        <button type="button" class="cottage-tab" data-category="vip">VIP Room</button>
+                    </div>
+                </div>
+
+                <div class="cottages-grid">
+
+                    <article class="cottage-card cottage-span-2 js-open-booking" data-room="Grand Lagoon Pool Cottage" data-category="vip">
+                        <div class="cottage-badge">Php 55,000</div>
+                        <div class="cottage-img-wrap">
+                            <img src="./asset/images/cottages1.avif" alt="Grand Lagoon Pool Cottage with pool and sun loungers" loading="lazy" width="1572" height="939">
+                        </div>
+                        <div class="cottage-overlay">
+                            <div class="cottage-meta-item">
+                                <svg class="meta-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M2 4v16M2 8h20v12M2 17h20M6 8V5a1 1 0 011-1h4a1 1 0 011 1v3"/></svg>
+                                <span>Bed 3</span>
+                            </div>
+                            <div class="cottage-meta-item">
+                                <svg class="meta-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"/></svg>
+                                <span>4-5</span>
+                            </div>
+                            <div class="cottage-meta-item">
+                                <svg class="meta-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg>
+                                <span>2500 Sq</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="cottage-card cottage-span-1 js-open-booking" data-room="Ocean Cliffview Retreat" data-category="single">
+                        <div class="cottage-badge">Php 35,000</div>
+                        <div class="cottage-img-wrap">
+                            <img src="./asset/images/cottages2.avif" alt="Ocean Cliffview Retreat overlooking turquoise lagoon" loading="lazy" width="500" height="750">
+                        </div>
+                        <div class="cottage-overlay">
+                            <div class="cottage-meta-item">
+                                <svg class="meta-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M2 4v16M2 8h20v12M2 17h20M6 8V5a1 1 0 011-1h4a1 1 0 011 1v3"/></svg>
+                                <span>Bed 2</span>
+                            </div>
+                            <div class="cottage-meta-item">
+                                <svg class="meta-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"/></svg>
+                                <span>2-3</span>
+                            </div>
+                            <div class="cottage-meta-item">
+                                <svg class="meta-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg>
+                                <span>1200 Sq</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="cottage-card cottage-span-1 js-open-booking" data-room="Overwater Boardwalk Pavilion" data-category="large">
+                        <div class="cottage-badge">Php 45,000</div>
+                        <div class="cottage-img-wrap">
+                            <img src="./asset/images/cottages3.avif" alt="Overwater Boardwalk Pavilion with private ocean pier" loading="lazy" width="500" height="749">
+                        </div>
+                        <div class="cottage-overlay">
+                            <div class="cottage-meta-item">
+                                <svg class="meta-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M2 4v16M2 8h20v12M2 17h20M6 8V5a1 1 0 011-1h4a1 1 0 011 1v3"/></svg>
+                                <span>Bed 2</span>
+                            </div>
+                            <div class="cottage-meta-item">
+                                <svg class="meta-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"/></svg>
+                                <span>2-4</span>
+                            </div>
+                            <div class="cottage-meta-item">
+                                <svg class="meta-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg>
+                                <span>1750 Sq</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="cottage-card cottage-span-1 js-open-booking" data-room="Classic Heritage Stone Villa" data-category="single">
+                        <div class="cottage-badge">Php 25,000</div>
+                        <div class="cottage-img-wrap">
+                            <img src="./asset/images/cottages4.avif" alt="Classic Heritage Stone Villa with garden pond" loading="lazy" width="500" height="750">
+                        </div>
+                        <div class="cottage-overlay">
+                            <div class="cottage-meta-item">
+                                <svg class="meta-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M2 4v16M2 8h20v12M2 17h20M6 8V5a1 1 0 011-1h4a1 1 0 011 1v3"/></svg>
+                                <span>Bed 1</span>
+                            </div>
+                            <div class="cottage-meta-item">
+                                <svg class="meta-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"/></svg>
+                                <span>2</span>
+                            </div>
+                            <div class="cottage-meta-item">
+                                <svg class="meta-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg>
+                                <span>1000 Sq</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="cottage-card cottage-span-1 js-open-booking" data-room="Alpine A-Frame Chalet" data-category="large">
+                        <div class="cottage-badge">Php 30,000</div>
+                        <div class="cottage-img-wrap">
+                            <img src="./asset/images/cottages5.avif" alt="Alpine A-Frame Chalet cottage with glass facade" loading="lazy" width="500" height="750">
+                        </div>
+                        <div class="cottage-overlay">
+                            <div class="cottage-meta-item">
+                                <svg class="meta-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M2 4v16M2 8h20v12M2 17h20M6 8V5a1 1 0 011-1h4a1 1 0 011 1v3"/></svg>
+                                <span>Bed 1</span>
+                            </div>
+                            <div class="cottage-meta-item">
+                                <svg class="meta-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"/></svg>
+                                <span>2-3</span>
+                            </div>
+                            <div class="cottage-meta-item">
+                                <svg class="meta-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg>
+                                <span>1400 Sq</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="cottage-card cottage-span-2 js-open-booking" data-room="Presidential Poolside Bungalows" data-category="vip">
+                        <div class="cottage-badge">Php 55,000</div>
+                        <div class="cottage-img-wrap">
+                            <img src="./asset/images/cottages6.avif" alt="Presidential Poolside Bungalow estate with pool" loading="lazy" width="500" height="333">
+                        </div>
+                        <div class="cottage-overlay">
+                            <div class="cottage-meta-item">
+                                <svg class="meta-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M2 4v16M2 8h20v12M2 17h20M6 8V5a1 1 0 011-1h4a1 1 0 011 1v3"/></svg>
+                                <span>Bed 4</span>
+                            </div>
+                            <div class="cottage-meta-item">
+                                <svg class="meta-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"/></svg>
+                                <span>4-5</span>
+                            </div>
+                            <div class="cottage-meta-item">
+                                <svg class="meta-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg>
+                                <span>2200 Sq</span>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="cottages-bottom-action">
+                    <button type="button" class="btn btn-explore-cottages js-open-booking">
+                        <span>Explore</span>
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                            <path d="M5 12h14M12 5l7 7-7 7"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <section id="explore-us" class="section-explore-video">
+
+            <div class="explore-branch-bg" aria-hidden="true">
+                <svg viewBox="0 0 1000 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M120 180 C260 140 380 110 520 70 C640 35 780 40 920 15" stroke="#CBD5E1" stroke-width="2.5" stroke-linecap="round" opacity="0.45"/>
+                    <path d="M340 120 C390 90 450 85 500 95" stroke="#CBD5E1" stroke-width="1.8" stroke-linecap="round" opacity="0.35"/>
+                    <path d="M480 80 C525 55 580 50 625 60" stroke="#CBD5E1" stroke-width="1.8" stroke-linecap="round" opacity="0.35"/>
+                    <ellipse cx="504" cy="94" rx="7" ry="3.5" transform="rotate(-15 504 94)" fill="#94A3B8" opacity="0.4"/>
+                    <ellipse cx="628" cy="59" rx="7" ry="3.5" transform="rotate(-20 628 59)" fill="#94A3B8" opacity="0.4"/>
+                </svg>
+            </div>
+
+            <div class="container explore-container">
+
+                <div class="explore-header">
+                    <h2 class="explore-title">Explore us</h2>
+                </div>
+
+                <div class="explore-video-wrapper" id="exploreVideoCard">
+
+                    <video 
+                        id="resortPromoVideo" 
+                        class="explore-video-media" 
+                        preload="metadata" 
+                        playsinline
+                        loop
+                        aria-label="Holiday AngJet Resort promotional showcase video"
+                    >
+                        <source src="./asset/images/promotionalvideo-exploreus.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+
+                    <div class="explore-video-vignette" aria-hidden="true"></div>
+
+                    <nav class="explore-overlay-menu" aria-label="Resort Features Video Navigation">
+                        <ul class="explore-menu-list">
+                            <li class="explore-menu-item active" data-time="0">
+                                <button type="button" class="explore-menu-btn">
+                                    <span>Swimming pool</span>
+                                    <svg class="explore-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                        <path d="M5 12h14M12 5l7 7-7 7"/>
+                                    </svg>
+                                </button>
+                            </li>
+                            <li class="explore-menu-item" data-time="5">
+                                <button type="button" class="explore-menu-btn">
+                                    <span>Playground</span>
+                                    <svg class="explore-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                        <path d="M5 12h14M12 5l7 7-7 7"/>
+                                    </svg>
+                                </button>
+                            </li>
+                            <li class="explore-menu-item" data-time="10">
+                                <button type="button" class="explore-menu-btn">
+                                    <span>Garden</span>
+                                    <svg class="explore-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                        <path d="M5 12h14M12 5l7 7-7 7"/>
+                                    </svg>
+                                </button>
+                            </li>
+                            <li class="explore-menu-item" data-time="15">
+                                <button type="button" class="explore-menu-btn">
+                                    <span>Dining</span>
+                                    <svg class="explore-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                        <path d="M5 12h14M12 5l7 7-7 7"/>
+                                    </svg>
+                                </button>
+                            </li>
+                        </ul>
+                    </nav>
+
+                    <button type="button" class="explore-play-btn" id="explorePlayBtn" aria-label="Play resort showcase video">
+                        <span class="play-icon-wrap">
+                            <svg class="icon-play" width="26" height="26" viewBox="0 0 24 24" fill="currentColor">
+                                <polygon points="6,3 20,12 6,21"/>
+                            </svg>
+                            <svg class="icon-pause" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" style="display: none;">
+                                <rect x="5" y="4" width="4" height="16" rx="1"/>
+                                <rect x="15" y="4" width="4" height="16" rx="1"/>
+                            </svg>
+                        </span>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <section id="gallery" class="section-gallery-mosaic">
+
+            <div class="gallery-branch-top" aria-hidden="true">
+                <svg viewBox="0 0 900 320" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M-40 100 C70 85 180 120 270 75 C340 40 430 35 520 15" stroke="#CBD5E1" stroke-width="2.5" stroke-linecap="round" opacity="0.45"/>
+                    <path d="M140 90 C185 65 240 60 285 70" stroke="#CBD5E1" stroke-width="1.8" stroke-linecap="round" opacity="0.35"/>
+                    <path d="M320 55 C365 30 420 28 460 38" stroke="#CBD5E1" stroke-width="1.8" stroke-linecap="round" opacity="0.35"/>
+                    <ellipse cx="288" cy="70" rx="7" ry="3.5" transform="rotate(-15 288 70)" fill="#94A3B8" opacity="0.4"/>
+                    <ellipse cx="462" cy="38" rx="7" ry="3.5" transform="rotate(-20 462 38)" fill="#94A3B8" opacity="0.4"/>
+                </svg>
+            </div>
+
+            <div class="gallery-branch-bottom" aria-hidden="true">
+                <svg viewBox="0 0 600 240" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M-30 200 C80 160 190 180 280 130 C340 95 400 110 480 80" stroke="#CBD5E1" stroke-width="2.2" stroke-linecap="round" opacity="0.4"/>
+                    <path d="M130 170 C170 145 220 140 260 150" stroke="#CBD5E1" stroke-width="1.6" stroke-linecap="round" opacity="0.3"/>
+                    <ellipse cx="262" cy="150" rx="6" ry="3" transform="rotate(-15 262 150)" fill="#94A3B8" opacity="0.35"/>
+                </svg>
+            </div>
+
+            <div class="container gallery-container">
+
+                <div class="gallery-split-header">
+                    <div class="gallery-header-left">
+                        <h2 class="gallery-title">Our Gallery</h2>
+                    </div>
+                    <div class="gallery-header-right">
+                        <p class="gallery-desc">
+                            Immerse yourself in the visual splendor of Holiday AngJet Resort. From sun-kissed infinity pools and secluded private beach swings to enchanting starlit boardwalks, explore unforgettable moments captured across our tropical sanctuary.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="gallery-grid">
+
+                    <div class="gallery-item gallery-item-tall js-open-booking" data-room="Sanctuary Lagoon Pool">
+                        <img 
+                            src="./asset/images/facility-pool.avif" 
+                            alt="Holiday AngJet Resort serene swimming pool surrounded by tropical palm trees at sunset" 
+                            loading="lazy" 
+                            width="600" 
+                            height="900"
+                        >
+                        <div class="gallery-item-overlay">
+                            <span class="gallery-zoom-icon" aria-hidden="true">🔍</span>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item gallery-item-small js-open-booking" data-room="Beach Hammock Haven">
+                        <img 
+                            src="./asset/images/events3.avif" 
+                            alt="Hanging beach hammock swing under palm tree overlooking turquoise sea" 
+                            loading="lazy" 
+                            width="500" 
+                            height="749"
+                        >
+                        <div class="gallery-item-overlay">
+                            <span class="gallery-zoom-icon" aria-hidden="true">🔍</span>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item gallery-item-small js-open-booking" data-room="Lagoon Coral Excursion">
+                        <img 
+                            src="./asset/images/events2.avif" 
+                            alt="Aerial perspective of resort swimmers enjoying crystal clear lagoon pool" 
+                            loading="lazy" 
+                            width="500" 
+                            height="750"
+                        >
+                        <div class="gallery-item-overlay">
+                            <span class="gallery-zoom-icon" aria-hidden="true">🔍</span>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item gallery-item-small js-open-booking" data-room="Overwater Boardwalk Pavilion">
+                        <img 
+                            src="./asset/images/offersection2.avif" 
+                            alt="Wooden pier leading to overwater thatched dining pavilion at dusk with lanterns" 
+                            loading="lazy" 
+                            width="500" 
+                            height="333"
+                        >
+                        <div class="gallery-item-overlay">
+                            <span class="gallery-zoom-icon" aria-hidden="true">🔍</span>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item gallery-item-wide js-open-booking" data-room="Poolside Lounge Cabana">
+                        <img 
+                            src="./asset/images/cottages1.avif" 
+                            alt="Luxury pool sundeck with wooden loungers and white parasols in tropical garden" 
+                            loading="lazy" 
+                            width="1572" 
+                            height="939"
+                        >
+                        <div class="gallery-item-overlay">
+                            <span class="gallery-zoom-icon" aria-hidden="true">🔍</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-bottom-action">
+                    <button type="button" class="btn btn-explore-gallery js-open-booking" data-room="Resort Sanctuary Tour">
+                        <span>Explore</span>
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                            <path d="M5 12h14M12 5l7 7-7 7"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <section id="reviews" class="section-reviews">
+            <div class="container reviews-container">
+                <div class="review-banner-card">
+
+                    <div class="review-banner-img-wrap">
+                        <img 
+                            src="./asset/images/cottages3.avif" 
+                            alt="Holiday AngJet Resort overwater boardwalk and thatched villas overlooking turquoise sea" 
+                            loading="lazy" 
+                            width="500" 
+                            height="749"
+                        >
+                    </div>
+
+                    <div class="review-banner-overlay" aria-hidden="true"></div>
+
+                    <div class="review-banner-left">
+                        <h2 class="review-banner-title">Positive stories<br>of our clients</h2>
+                    </div>
+
+                    <div class="review-card-floating" id="reviewCardBox">
+                        <div class="review-card-header">
+                            <div class="review-author-meta">
+                                <img 
+                                    src="./asset/images/avatar-esther.avif" 
+                                    alt="Esther Howard" 
+                                    class="review-avatar" 
+                                    id="reviewAvatar"
+                                    width="52" 
+                                    height="52"
+                                >
+                                <div class="review-author-info">
+                                    <h4 class="review-author-name" id="reviewAuthor">Esther Howard</h4>
+                                    <span class="review-author-role" id="reviewRole">Marketing Director • Verified Stay</span>
+                                </div>
+                            </div>
+                            <div class="review-quote-icon" aria-hidden="true">
+                                <svg width="28" height="28" viewBox="0 0 24 24" fill="#0284c7" opacity="0.35">
+                                    <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/>
+                                </svg>
+                            </div>
+                        </div>
+
+                        <p class="review-text" id="reviewText">
+                            "From the moment we arrived via the private boat transfer, Holiday AngJet Resort exceeded every expectation. The serene lagoon views, exquisite sunset dining, and impeccable concierge care made our retreat truly unforgettable."
+                        </p>
+
+                        <div class="review-card-actions">
+                            <button type="button" class="btn-review-nav btn-review-prev" id="prevReviewBtn" aria-label="Previous client story">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M19 12H5M12 19l-7-7 7-7"/>
+                                </svg>
+                            </button>
+                            <button type="button" class="btn-review-nav btn-review-next" id="nextReviewBtn" aria-label="Next client story">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M5 12h14M12 5l7 7-7 7"/>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="exclusive-offers" class="section-exclusive-offers">
+
+            <div class="offers-branch-top" aria-hidden="true">
+                <svg viewBox="0 0 900 320" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M520 20 C640 45 760 110 840 180 C890 220 940 260 1000 290" stroke="#CBD5E1" stroke-width="2.5" stroke-linecap="round" opacity="0.45"/>
+                    <path d="M720 100 C770 75 830 70 875 80" stroke="#CBD5E1" stroke-width="1.8" stroke-linecap="round" opacity="0.35"/>
+                    <ellipse cx="878" cy="80" rx="7" ry="3.5" transform="rotate(-15 878 80)" fill="#94A3B8" opacity="0.4"/>
+                </svg>
+            </div>
+
+            <div class="container offers-carousel-container">
+
+                <div class="offers-carousel-header">
+                    <div class="offers-header-left">
+                        <h2 class="offers-carousel-title">Exclusive offers</h2>
+                    </div>
+                    <div class="offers-header-right">
+                        <p class="offers-carousel-desc">
+                            Escape to paradise with limited-time seasonal packages and promotional savings. Book direct to unlock complimentary seaplane upgrades, signature spa treatments, and guaranteed best rates.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="offers-slider-viewport">
+
+                    <button type="button" class="btn-carousel-nav btn-carousel-prev" id="offersPrevBtn" aria-label="Previous promotional offer">
+                        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M15 18l-6-6 6-6"/>
+                        </svg>
+                    </button>
+                    <button type="button" class="btn-carousel-nav btn-carousel-next" id="offersNextBtn" aria-label="Next promotional offer">
+                        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M9 18l6-6-6-6"/>
+                        </svg>
+                    </button>
+
+                    <div class="offers-track" id="offersTrack">
+
+                        <div class="offer-slide active" data-index="0">
+                            <div class="offer-banner-card">
+
+                                <div class="offer-media-wrap">
+                                    <img 
+                                        src="./asset/images/hero-resort-section.avif" 
+                                        alt="Holiday AngJet Resort tropical swimming pool and wooden villas" 
+                                        loading="lazy" 
+                                        width="1171" 
+                                        height="781"
+                                    >
+
+                                    <div class="offer-discount-badge">
+                                        <span>UPTO</span>
+                                        <strong>30%</strong>
+                                        <span>OFF</span>
+                                    </div>
+                                </div>
+
+                                <div class="offer-info-panel">
+                                    <div class="offer-brand-mark">
+                                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                                            <rect x="3" y="3" width="7" height="7" transform="rotate(45 6.5 6.5)" fill="rgba(255,255,255,0.2)"/>
+                                            <rect x="14" y="3" width="7" height="7" transform="rotate(45 17.5 6.5)" fill="rgba(255,255,255,0.4)"/>
+                                            <rect x="8.5" y="8.5" width="7" height="7" transform="rotate(45 12 12)" fill="#ffffff"/>
+                                        </svg>
+                                    </div>
+                                    <h3 class="offer-banner-title">Holiday AngJet Resort</h3>
+                                    <p class="offer-banner-text">
+                                        Escape to paradise with up to 30% off luxury villas. Book now and experience unforgettable moments under the tropical sun.
+                                    </p>
+                                    <button type="button" class="btn-offer-book js-open-booking" data-room="Tropical Paradise 30% Off Special">
+                                        BOOK NOW
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="offer-slide" data-index="1">
+                            <div class="offer-banner-card">
+                                <div class="offer-media-wrap">
+                                    <img 
+                                        src="./asset/images/cottages3.avif" 
+                                        alt="Overwater Boardwalk Pavilion with turquoise lagoon" 
+                                        loading="lazy" 
+                                        width="500" 
+                                        height="749"
+                                    >
+                                    <div class="offer-discount-badge">
+                                        <span>UPTO</span>
+                                        <strong>25%</strong>
+                                        <span>OFF</span>
+                                    </div>
+                                </div>
+
+                                <div class="offer-info-panel">
+                                    <div class="offer-brand-mark">
+                                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                                            <rect x="3" y="3" width="7" height="7" transform="rotate(45 6.5 6.5)" fill="rgba(255,255,255,0.2)"/>
+                                            <rect x="14" y="3" width="7" height="7" transform="rotate(45 17.5 6.5)" fill="rgba(255,255,255,0.4)"/>
+                                            <rect x="8.5" y="8.5" width="7" height="7" transform="rotate(45 12 12)" fill="#ffffff"/>
+                                        </svg>
+                                    </div>
+                                    <h3 class="offer-banner-title">Lagoon Sanctuary</h3>
+                                    <p class="offer-banner-text">
+                                        Indulge in overwater serenity with complimentary gourmet breakfast and chartered sunset catamaran excursions included.
+                                    </p>
+                                    <button type="button" class="btn-offer-book js-open-booking" data-room="Lagoon Sanctuary 25% Off Retreat">
+                                        BOOK NOW
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="offer-slide" data-index="2">
+                            <div class="offer-banner-card">
+                                <div class="offer-media-wrap">
+                                    <img 
+                                        src="./asset/images/cottages1.avif" 
+                                        alt="Grand Lagoon Pool Cottage with pool and sun loungers" 
+                                        loading="lazy" 
+                                        width="1572" 
+                                        height="939"
+                                    >
+                                    <div class="offer-discount-badge">
+                                        <span>UPTO</span>
+                                        <strong>35%</strong>
+                                        <span>OFF</span>
+                                    </div>
+                                </div>
+
+                                <div class="offer-info-panel">
+                                    <div class="offer-brand-mark">
+                                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                                            <rect x="3" y="3" width="7" height="7" transform="rotate(45 6.5 6.5)" fill="rgba(255,255,255,0.2)"/>
+                                            <rect x="14" y="3" width="7" height="7" transform="rotate(45 17.5 6.5)" fill="rgba(255,255,255,0.4)"/>
+                                            <rect x="8.5" y="8.5" width="7" height="7" transform="rotate(45 12 12)" fill="#ffffff"/>
+                                        </svg>
+                                    </div>
+                                    <h3 class="offer-banner-title">Presidential Retreat</h3>
+                                    <p class="offer-banner-text">
+                                        Reserve our premier pool villas for 4+ nights and enjoy private butler hospitality plus complimentary holistic spa treatments.
+                                    </p>
+                                    <button type="button" class="btn-offer-book js-open-booking" data-room="Presidential Retreat 35% Off Package">
+                                        BOOK NOW
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact-us" class="section-contact-map">
+
+            <div class="contact-branch-top" aria-hidden="true">
+                <svg viewBox="0 0 900 320" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M-60 140 C80 120 180 160 280 110 C360 70 450 60 540 30" stroke="#CBD5E1" stroke-width="2.5" stroke-linecap="round" opacity="0.45"/>
+                    <path d="M140 125 C190 95 250 90 295 100" stroke="#CBD5E1" stroke-width="1.8" stroke-linecap="round" opacity="0.35"/>
+                    <path d="M320 85 C370 55 425 50 470 60" stroke="#CBD5E1" stroke-width="1.8" stroke-linecap="round" opacity="0.35"/>
+                    <ellipse cx="298" cy="100" rx="7" ry="3.5" transform="rotate(-15 298 100)" fill="#94A3B8" opacity="0.4"/>
+                    <ellipse cx="472" cy="60" rx="7" ry="3.5" transform="rotate(-20 472 60)" fill="#94A3B8" opacity="0.4"/>
+                </svg>
+            </div>
+
+            <div class="container contact-map-container">
+
+                <div class="contact-map-header">
+                    <h2 class="contact-map-title">Book Now</h2>
+                    <p class="contact-map-subtitle">Our friendly team would love to hear from you!</p>
+                </div>
+
+                <div class="contact-map-grid">
+
+                    <div class="contact-info-list">
+
+                        <div class="contact-info-block">
+                            <h3 class="contact-block-title">Call us<span class="text-accent">*</span></h3>
+                            <p class="contact-block-desc">Call our team Saturday-Friday 10 am - 8pm</p>
+                            <div class="contact-block-action">
+                                <a href="tel:+63333302645" class="contact-link">
+                                    <span class="contact-icon-bubble">
+                                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                                        </svg>
+                                    </span>
+                                    <span>+63 (33) 330-2645 / +63 917 112 6360</span>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="contact-info-block">
+                            <h3 class="contact-block-title">Reservation Hot Line<span class="text-accent">*</span></h3>
+                            <p class="contact-block-desc">Chat to us via social media or email for instant reservation</p>
+                            <div class="contact-block-action">
+                                <a href="tel:+639171126360" class="contact-link">
+                                    <span class="contact-icon-bubble">
+                                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                                        </svg>
+                                    </span>
+                                    <span>+63 917 112 6360</span>
+                                </a>
+                                <a href="mailto:reservations@holidayangjetresort.com" class="contact-link">
+                                    <span class="contact-icon-bubble">
+                                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                            <rect x="2" y="4" width="20" height="16" rx="2"/>
+                                            <path d="M22 7l-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/>
+                                        </svg>
+                                    </span>
+                                    <span>reservations@holidayangjetresort.com</span>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="contact-info-block">
+                            <h3 class="contact-block-title">Visit us<span class="text-accent">*</span></h3>
+                            <p class="contact-block-desc">Chat to us in person at Holiday AngJet Resort</p>
+                            <div class="contact-block-action">
+                                <div class="contact-address-item">
+                                    <span class="contact-icon-bubble">
+                                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                                            <circle cx="12" cy="10" r="3"/>
+                                        </svg>
+                                    </span>
+                                    <span>Coastal Boulevard, Villa Beach, Arevalo, Iloilo City, 5000 Iloilo, Philippines</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="contact-map-wrapper">
+                        <iframe 
+                            class="contact-map-iframe"
+                            title="Holiday AngJet Resort Location Map in Iloilo City, Philippines"
+                            src="https://www.openstreetmap.org/export/embed.html?bbox=122.4800%2C10.6500%2C122.5800%2C10.7400&amp;layer=mapnik&amp;marker=10.6850%2C122.5250"
+                            loading="lazy"
+                        ></iframe>
+
+                        <a href="https://maps.google.com/?q=Villa+Beach+Arevalo+Iloilo+City+Philippines" target="_blank" rel="noopener noreferrer" class="map-floating-pin-card" aria-label="Open Holiday AngJet Resort in Google Maps">
+                            <img 
+                                src="./asset/images/cottages3.avif" 
+                                alt="Holiday AngJet Resort" 
+                                class="pin-card-thumb" 
+                                width="48" 
+                                height="48"
+                            >
+                            <div class="pin-card-info">
+                                <h4 class="pin-card-title">Holiday AngJet Resort</h4>
+                                <p class="pin-card-subtitle">The haven of pure relaxation • Iloilo City</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <dialog id="bookingModal" class="booking-modal" aria-labelledby="modalTitle">
+        <div class="modal-header">
+            <h3 id="modalTitle" class="modal-title">Reserve Your Stay</h3>
+            <button type="button" class="modal-close-btn" aria-label="Close booking modal">&times;</button>
+        </div>
+        <div class="modal-body">
+            <form id="bookingForm" class="booking-form">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="checkin" class="form-label">Check-In Date</label>
+                        <input type="date" id="checkin" class="form-input" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="checkout" class="form-label">Check-Out Date</label>
+                        <input type="date" id="checkout" class="form-input" required>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="guests" class="form-label">Guests</label>
+                        <select id="guests" class="form-select">
+                            <option value="1 Adult">1 Adult</option>
+                            <option value="2 Adults" selected>2 Adults</option>
+                            <option value="2 Adults, 1 Child">2 Adults, 1 Child</option>
+                            <option value="Family / 4+ Guests">Family (4+ Guests)</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="roomType" class="form-label">Villa / Suite Type</label>
+                        <select id="roomType" class="form-select">
+                            <option value="Grand Lagoon Pool Cottage">Grand Lagoon Pool Cottage</option>
+                            <option value="Ocean Cliffview Retreat">Ocean Cliffview Retreat</option>
+                            <option value="Overwater Boardwalk Pavilion">Overwater Boardwalk Pavilion</option>
+                            <option value="Presidential Poolside Bungalows">Presidential Poolside Bungalows</option>
+                            <option value="Tropical Paradise 30% Off Special">Tropical Paradise 30% Off Special</option>
+                        </select>
+                    </div>
+                </div>
+
+                <button type="submit" class="btn btn-submit-booking">
+                    Check Availability & Reserve
+                </button>
+            </form>
+        </div>
+    </dialog>
+
+    <footer class="site-footer-rich">
+        <div class="container footer-container">
+
+            <div class="footer-top-row">
+                <a href="#home" class="brand-name">Holiday AngJet Resort</a>
+
+                <div class="footer-social-links" aria-label="Social Media Links">
+                    <a href="https://facebook.com" class="social-icon-btn" aria-label="Facebook" target="_blank" rel="noopener noreferrer">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/>
+                        </svg>
+                    </a>
+                    <a href="https://youtube.com" class="social-icon-btn" aria-label="YouTube" target="_blank" rel="noopener noreferrer">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33zM9.75 15.02V8.48l5.75 3.27z"/>
+                        </svg>
+                    </a>
+                    <a href="#home" class="social-icon-btn" aria-label="Website" rel="noopener noreferrer">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+                        </svg>
+                    </a>
+                    <a href="https://twitter.com" class="social-icon-btn" aria-label="X Twitter" target="_blank" rel="noopener noreferrer">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+                        </svg>
+                    </a>
+                    <a href="https://instagram.com" class="social-icon-btn" aria-label="Instagram" target="_blank" rel="noopener noreferrer">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+
+            <div class="footer-columns-grid">
+
+                <div class="footer-col">
+                    <h4 class="footer-col-title">Contact Info</h4>
+                    <ul class="footer-col-list">
+                        <li class="footer-info-item">
+                            <svg class="footer-item-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/>
+                            </svg>
+                            <span>Coastal Boulevard, Villa Beach, Arevalo, Iloilo City, 5000 Iloilo, Philippines</span>
+                        </li>
+                        <li class="footer-info-item">
+                            <svg class="footer-item-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <rect x="2" y="4" width="20" height="16" rx="2"/><path d="M22 7l-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/>
+                            </svg>
+                            <a href="mailto:concierge@holidayangjetresort.com">concierge@holidayangjetresort.com</a>
+                        </li>
+                        <li class="footer-info-item">
+                            <svg class="footer-item-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                            </svg>
+                            <a href="tel:+63333302645">+63 (33) 330-2645 / +63 917 112 6360</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4 class="footer-col-title">Sister Concern</h4>
+                    <ul class="footer-col-list">
+                        <li><a href="#home">Holiday AngJet Resort</a></li>
+                        <li><a href="#facilities">AngJet Eco Marine Sanctuary</a></li>
+                        <li><a href="#events">AngJet Aviation &amp; Seaplane</a></li>
+                        <li><a href="#contact-us">AngJet Hospitality Group</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4 class="footer-col-title">Quick Links</h4>
+                    <ul class="footer-col-list">
+                        <li><a href="#offers">About Us</a></li>
+                        <li><a href="#facilities">Facilities</a></li>
+                        <li><a href="#accommodation">Accommodations</a></li>
+                        <li><a href="#gallery">Gallery</a></li>
+                        <li><a href="#exclusive-offers">Exclusive Offers</a></li>
+                        <li><a href="#contact-us">Terms &amp; Condition</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-circle-portal-col" aria-hidden="true">
+                    <div class="footer-circle-portal">
+                        <img 
+                            src="./asset/images/cottages3.avif" 
+                            alt="Holiday AngJet Resort overwater boardwalk" 
+                            loading="lazy" 
+                            width="500" 
+                            height="749"
+                        >
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom-bar">
+                <p>&copy; 2026 Holiday AngJet Resort. All rights reserved. Iloilo City, Philippines.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./asset/js/main.js"></script>
+</body>
+
+</html>
